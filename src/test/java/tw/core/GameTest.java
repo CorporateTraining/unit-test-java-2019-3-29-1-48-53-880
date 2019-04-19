@@ -1,5 +1,7 @@
 package tw.core;
 
+import org.junit.Test;
+
 /**
  * 在GameTest文件中完成Game中对应的单元测试
  */
@@ -7,4 +9,19 @@ package tw.core;
 
 public class GameTest {
 
+    @Test
+    public void guess() {
+    }
+
+    @Test
+    public void guessHistory() {
+    }
+
+    @Test
+    public void checkCoutinue() {
+    }
+
+    @Test
+    public void checkStatus() {
+    }
 }
