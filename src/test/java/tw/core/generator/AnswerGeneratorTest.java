@@ -14,7 +14,7 @@ import static org.mockito.Mockito.when;
 public class AnswerGeneratorTest {
 
     @Test
-    public void generate() throws OutOfRangeAnswerException {
+    public void generate_standard_answer_test() throws OutOfRangeAnswerException {
         RandomIntGenerator randomIntGenerator = mock(RandomIntGenerator.class);
         AnswerGenerator answerGenerator = new AnswerGenerator(randomIntGenerator);
         String result = "2 3 4 5";

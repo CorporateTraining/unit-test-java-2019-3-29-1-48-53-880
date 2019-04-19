@@ -16,7 +16,7 @@ import static org.mockito.Mockito.when;
 public class GameTest {
 
     @Test
-    public void guess_test() throws OutOfRangeAnswerException {
+    public void guess_answer_test() throws OutOfRangeAnswerException {
         AnswerGenerator answerGenerator = mock(AnswerGenerator.class);
         when(answerGenerator.generate()).thenReturn(Answer.createAnswer("1 2 3 4"));
         Game game = new Game(answerGenerator);
@@ -24,7 +24,7 @@ public class GameTest {
     }
 
     @Test
-    public void guess_test_two() throws OutOfRangeAnswerException {
+    public void guess_answer_test_two() throws OutOfRangeAnswerException {
         AnswerGenerator answerGenerator = mock(AnswerGenerator.class);
         when(answerGenerator.generate()).thenReturn(Answer.createAnswer("1 2 3 4"));
         Game game = new Game(answerGenerator);
@@ -32,7 +32,7 @@ public class GameTest {
     }
 
     @Test
-    public void check_status_test() throws OutOfRangeAnswerException {
+    public void check_answer_status_test() throws OutOfRangeAnswerException {
         AnswerGenerator answerGenerator = mock(AnswerGenerator.class);
         when(answerGenerator.generate()).thenReturn(Answer.createAnswer("1 2 3 4"));
         Game game = new Game(answerGenerator);

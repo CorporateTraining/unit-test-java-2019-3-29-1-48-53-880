@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class AnswerTest {
 
     @Test
-    public void create_answer_test() {
+    public void create_answer_from_string_to_list_test() {
         String inputStr = "2 3 4 5";
         Answer answer = Answer.createAnswer(inputStr);
         Assert.assertEquals(answer.getIndexOfNum("2"), 0);
@@ -21,14 +21,14 @@ public class AnswerTest {
     }
 
     @Test
-    public void create_answer_test_two() {
+    public void create_answer_from_string_to_list_test_two() {
         String inputStr = "1 2 3 4";
         Answer answer = Answer.createAnswer(inputStr);
         Assert.assertEquals(answer.toString(),inputStr);
     }
 
     @Test
-    public void check() {
+    public void check_input_and_out_put_result() {
         Answer answer = new Answer();
         answer.setNumList(Arrays.asList("1", "2", "3", "4"));
         Assert.assertEquals(answer.check(answer).getValue(), "4A0B");
