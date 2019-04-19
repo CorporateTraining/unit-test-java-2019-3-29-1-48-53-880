@@ -49,4 +49,5 @@ dependencies {
 
     //testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
     testCompile "org.mockito:mockito-core:2.7.22"
+    testCompile 'com.github.stefanbirkner:system-rules:1.18.0'
 }
